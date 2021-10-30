@@ -1,0 +1,42 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class ComplexArithmeticComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double firstRoot = 0;
+		double secondRoot = 0;
+		double a;
+		double b;
+		double c;
+		
+		Scanner scan = new Scanner (System.in);
+		//(-b + Math.sqrt((b*b - 4*a*c))) / (2*a);
+		
+		System.out.println("Enter the value of a: ");
+		a =scan.nextDouble();
+		
+		System.out.println("Enter the value of b: ");
+		b =scan.nextDouble();
+		
+		System.out.println("Enter the value of c: ");
+		c =scan.nextDouble();
+		
+		System.out.println("The value of a = " + a);
+		System.out.println("The value of b = " + b);
+		System.out.println("The value of c = " + c);
+		
+		double determinant = (b*b)-(4*a*c);
+		
+		if(determinant>0) {
+			firstRoot = (-b + Math.sqrt(determinant)) / (2*a);
+			secondRoot = (-b - Math.sqrt(determinant)) / (2*a);
+			System.out.println("Roots are: " + firstRoot + "and" + secondRoot);
+		}else if(determinant == 0) {
+			System.out.println("Root is: " + (-b + Math.sqrt(determinant)) / (2*a));
+		}
+
+	}
+}
