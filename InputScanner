@@ -1,0 +1,53 @@
+package selfProgramming;
+import java.util.Scanner;
+
+public class InputScanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the value of integer a: ");
+		int a= sc.nextInt();
+		
+		System.out.println("Enter the value of integer b: ");
+		int b= sc.nextInt();
+		
+		boolean compare1 = a < b;
+		boolean compare2 = a > b;
+		
+		System.out.println("The value of a: " + a);
+		System.out.println("The value of b: " + b);
+		System.out.println("The a is greater than b: " + compare1);
+		System.out.println("The a is lower than b: " + compare2);
+		System.out.println();
+		
+		//comparison between string (only can "!=" or "==")
+		String d ="hello";
+		String e ="Hello"; //cap letters are important in programming
+		
+		System.out.println("The value of string d: " + d);
+		System.out.println("The value of string e: " + e);
+		System.out.println("d is equal to e: " + d.equals(e)); //comparison between string use ".equals()"
+		System.out.println();
+		
+		int x = 6;
+		int y = 23;
+		int z = 10;
+		
+		//This part is "and -> &&", "or -> ||", "not -> !"
+		boolean compare4 = x > y && z < y; //Each compare result is "false" && "true" Final result show -> false (because of &&(and),if one of them is false;Then the result will become false;
+		boolean compare5 = x > y || z < y; //Final result -> true, for ||(or), if one of the compare result is true;Then the result shown true;
+		boolean compare6 = !(x > y || z < y); //The final result will be reverse
+		boolean compare7 = !(false); //Result = true
+		boolean compare8 = (x < y && y > z )||(z + 2 < 5 || x + 7 > y) ;
+		
+		System.out.println(compare4);
+		System.out.println(compare5);
+		System.out.println(compare6);
+		System.out.println(compare7);
+		System.out.println(compare8);
+		
+	}
+
+}
