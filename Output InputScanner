@@ -1,0 +1,18 @@
+Enter the value of integer a: 
+34
+Enter the value of integer b: 
+15
+The value of a: 34
+The value of b: 15
+The a is greater than b: false
+The a is lower than b: true
+
+The value of string d: hello
+The value of string e: Hello
+d is equal to e: false
+
+false
+true
+false
+true
+true
