@@ -1,0 +1,17 @@
+package selfProgramming;
+
+public class Conversion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// primitive data type 
+				int x = 5;
+				int y = 7;
+				int z = 57;
+				double u = x / (double)y;
+				
+				System.out.printf("%.5f",u);
+	}
+
+}
